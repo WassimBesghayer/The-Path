@@ -1,0 +1,208 @@
+// @media screen {
+    
+// }
+
+@font-face {
+    font-family: 'Quran-surah-font';
+    src: url(./media/fonts/quran-surah-font/QuranSurah01-w1yO6.ttf);
+}
+.display{   // definig workspace
+    display: grid;
+        grid-template: repeat(5, 20%) / repeat(13, 7.7%);
+        grid-area: 1 / 1 / 6 / 13;  // R-st / C-st / R-end / C-end
+    height: 100% !important;
+    overflow: hidden;
+    background-image:url(./media/images/great-mosque-kairouan.jpg);
+    background-size: cover;
+}
+
+#main-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px; /* Match outer-arch height */
+    padding-top: 200px;
+    overflow: hidden;
+}
+
+#clock {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#Hijri {
+    grid-area: 1 / 12 / 2 / 13;
+    order: 12 !important;   // to enforce its position !
+}
+
+#outer-arch {
+    grid-area: 2 / 3 / 3 / 11;  // defining workspace
+    position: relative;
+    border-radius: 50%;
+    background-color: red;
+    width: 60%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#inner-arch {
+    grid-area: 3 / 4 / 3 / 10;  // defining workspace
+    position: absolute;
+    border-radius: 50%;
+    background-color: blue;
+    width: 78%;
+    height: 600px;
+}
+
+.slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
+    transform-origin: 50% 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency */
+}
+
+/* Define each slice rotation */
+.slice:nth-child(1) {
+    transform: rotate(0deg);
+    background-color: rgba(255, 0, 0, 0.5); /* Example color */
+}
+
+.slice:nth-child(2) {
+    transform: rotate(60deg);
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.slice:nth-child(3) {
+    transform: rotate(120deg);
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.slice:nth-child(4) {
+    transform: rotate(180deg);
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.slice:nth-child(5) {
+    transform: rotate(240deg);
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+.slice:nth-child(6) {
+    transform: rotate(300deg);
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
+
+#sobh{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+#dhohr{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+#asr{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+#maghrib{
+    position: absolute;
+    top: 38px;
+    left: 30px;
+}
+#isha{
+    position: absolute;
+    top: 20x;
+    left: 40px;
+}
+
+marquee {
+    span { margin-right: 60px; }
+    font-family: 'Quran-surah-font';
+    }
+
+
+
+// .months {
+//     grid-area: 1 / 12 / 2 / 13;
+//     #1, #7, #11, #12 {
+//         color: red;
+//     }
+// }
+
+
+
+// home css
+
+.logo svg{
+    width:112x;
+    height: 116px;
+    fill: orange;
+    margin-top: 110px;
+}
+
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+    background-color: orange;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    width:14%;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:25%
+}
+.nav1 svg{
+    width:15px;
+    fill: white;
+    height: 16px;
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    height: 74px;
+    align-items: center;
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-around;
+    width:360px;
+    list-style: none;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo img{
+    position: absolute;
+  left: 288px;
+  top: 102px;
+  width: 83px;
+  height: 68px;
+
+}
